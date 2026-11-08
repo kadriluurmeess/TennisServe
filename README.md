@@ -24,25 +24,4 @@ Kasutame kuut WTA üksikmängude aastafaili: `2018_wta.csv` kuni `2023_wta.csv`.
 | 2023 | 2810 | 50 |
 | Kokku | 14776 | 50 |
 
-TennisMyLife'i avalikud kasutustingimused lubavad isiklikku, õppe- ja mitteärilist uurimiskasutust, kuid ei luba CSV-toorfailide edasijagamist. Seetõttu laadib skript andmed otse algallikast kasutaja arvuti `data/raw/` kausta. See kaust on `.gitignore` failis ja algandmeid repositooriumis ei avaldata. Enne muud kasutust kontrollige allika kehtivaid tingimusi.
-
-## Käivitamine
-
-1. Laadige repositoorium oma arvutisse ja avage selle kaust terminalis.
-2. Laadige andmed alla (vajalik Python 3; skript kasutab ainult standardteeki):
-
-   ```bash
-   python download_data.py
-   ```
-
-   Windowsis võib kasutada ka `py download_data.py`. Skript prindib iga aasta ridade ja veergude arvu ning koguarvu. Olemasolevaid faile ei laadita uuesti ega kirjutata üle. Algallikas võib hiljem andmeid parandada; kordusanalüüsiks säilitage kohalikud failid.
-
-3. Märkmiku jaoks paigaldage vajalikud paketid:
-
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-
-4. Avage `andmete_ulevaade.ipynb` Jupyteris või VS Code'is ja käivitage lahtrid järjekorras. Märkmik kasutab sama allalaadimisskripti, ühendab aastafailid ning näitab ridade ja veergude arvu.
-
-Veebis kuvatava märkmiku väljundid on jäetud tühjaks, et toorandmete ridu mitte edasi jagada. Need tekivad märkmiku käivitamisel kohalikus arvutis.
+TennisMyLife'i avalikud kasutustingimused lubavad isiklikku, õppe- ja mitteärilist uurimiskasutust, kuid ei luba CSV-toorfailide edasijagamist. Seetõttu laadib skript andmed otse algallikast kasutaja arvuti `data/raw/` kausta. See kaust on `.gitignore` failis ja algandmeid repositooriumis ei avaldata.
