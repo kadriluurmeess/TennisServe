@@ -1,0 +1,8 @@
+# Algandmed laaditakse otse TennisMyLife'ist kohalikku arvutisse.
+/data/raw/
+*.csv.part
+
+# Pythoni ja Jupyteri ajutised failid.
+__pycache__/
+.ipynb_checkpoints/
+.venv/
